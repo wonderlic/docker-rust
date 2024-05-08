@@ -3,7 +3,7 @@ LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
 # Distroless doesn't have a package manager so we have to manually pull over the dependencies.
 # Which lib files are needed can be determined with `ldd`.
-COPY --from=wonderlic/rust-builder:1.75 [\
+COPY --from=wonderlic/rust:1.75-builder [\
     "/lib/x86_64-linux-gnu/libexpat.so.1", \
     "/usr/lib/x86_64-linux-gnu/libuuid.so.1", \
     "/usr/lib/x86_64-linux-gnu/libpng16.so.16", \
