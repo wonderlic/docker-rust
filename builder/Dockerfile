@@ -1,4 +1,4 @@
-FROM rust:1.75-bullseye
+FROM rust:1.85-bullseye
 LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
 RUN apt update \
